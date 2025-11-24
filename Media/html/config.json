@@ -1,0 +1,28 @@
+{
+  "system": {
+    "version": "1.0",
+    "lastUpdated": "2024-01-01T00:00:00Z"
+  },
+  "mediaStorage": {
+    "type": "cloudflare_r2",
+    "baseUrl": "https://your-r2-domain.com/media/"
+  },
+  "audioLibrary": {
+    "folders": {
+      "default": "默认音乐",
+      "chill": "放松音乐"
+    },
+    "files": {
+      "file_001": {
+        "displayName": "示例音乐1",
+        "filename": "sample1.mp3",
+        "url": "https://your-r2-domain.com/media/sample1.mp3",
+        "folder": "default",
+        "duration": 180
+      }
+    }
+  },
+  "playlists": {
+    "default": ["file_001"]
+  }
+}
