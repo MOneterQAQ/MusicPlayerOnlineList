@@ -1,28 +1,69 @@
 {
   "system": {
-    "version": "1.0",
+    "version": "1.0", 
     "lastUpdated": "2024-01-01T00:00:00Z"
   },
-  "mediaStorage": {
-    "type": "cloudflare_r2",
-    "baseUrl": "https://your-r2-domain.com/media/"
+  "views": {
+    "All": {
+      "records": "唱片",
+      "background": "背景"
+    },
+    "Play": [
+      "record_001",
+      "bg_003",
+      "record_002",
+      "bg_001"
+    ]
   },
   "audioLibrary": {
-    "folders": {
-      "default": "默认音乐",
-      "chill": "放松音乐"
+    "record_001": {
+      "displayName": "",
+      "filename": "record1.mp3",
+      "url": "https://your-cdn.com/records/record1.mp3",
+      "folder": "records",
+      "duration": 180
     },
-    "files": {
-      "file_001": {
-        "displayName": "示例音乐1",
-        "filename": "sample1.mp3",
-        "url": "https://your-r2-domain.com/media/sample1.mp3",
-        "folder": "default",
-        "duration": 180
-      }
+    "record_002": {
+      "displayName": "唱片2", 
+      "filename": "record2.mp3",
+      "url": "https://your-cdn.com/records/record2.mp3",
+      "folder": "records",
+      "duration": 200
+    },
+    "record_003": {
+      "displayName": "唱片3",
+      "filename": "record3.mp3",
+      "url": "https://your-cdn.com/records/record3.mp3",
+      "folder": "records", 
+      "duration": 190
+    },
+    "bg_001": {
+      "displayName": "背景音乐1",
+      "filename": "bg1.mp3",
+      "url": "https://your-cdn.com/background/bg1.mp3",
+      "folder": "background",
+      "duration": 300
+    },
+    "bg_002": {
+      "displayName": "背景音乐2",
+      "filename": "bg2.mp3",
+      "url": "https://your-cdn.com/background/bg2.mp3",
+      "folder": "background",
+      "duration": 280
+    },
+    "bg_003": {
+      "displayName": "背景音乐3",
+      "filename": "bg3.mp3",
+      "url": "https://your-cdn.com/background/bg3.mp3",
+      "folder": "background",
+      "duration": 260
     }
   },
-  "playlists": {
-    "default": ["file_001"]
+  "settings": {
+    "currentPlaylist": "Play",
+    "playMode": {
+      "order": ["sequential"],
+      "loop": "list"
+    }
   }
 }
